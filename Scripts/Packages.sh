@@ -77,8 +77,10 @@ UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
 UPDATE_PACKAGE "timecontrol" "sirpdboy/luci-app-timecontrol" "main"
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "gecoosac luci-app-timewol luci-app-wolplus"
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
-# kenzok8 daed
-UPDATE_PACKAGE "daed" "kenzok8/openwrt-daede" "main" "pkg"
+# Honk 核心 + LuCI/Doona 管理界面
+UPDATE_PACKAGE "honk" "kwrum1/openwrt-honk" "main" "pkg"
+# Honk 所需的 GeoIP / GeoSite 数据包
+UPDATE_PACKAGE "v2ray-geodata" "kenzok8/wall" "main" "pkg" "v2ray-geoip v2ray-geosite"
 
 #更新软件包版本
 UPDATE_VERSION() {
